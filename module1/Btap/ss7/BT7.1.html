@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển Đổi Tiền Tệ</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th><lable for ="Amount">Amount</lable></th>
+            <th>From Currnecy</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="text" id="Amount"></td>
+            <td>
+                <select id="From">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="To">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td><button onclick="doiduoctien()">Convert</button></td>
+        </tr>
+    </table>
+    <p id="Result"></p>
+    <script src="BT7.1.js"></script>
+</body>
+</html>
