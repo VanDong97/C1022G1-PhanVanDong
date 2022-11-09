@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sales=parseInt(prompt('Doanh Thu Ban Hang (VND)'))
+        let a = sales * 10/100
+        let b = sales * 20/100
+        let c = sales * 30/100
+        if(sales < 1000000){
+            alert('Không nhận được hoa hồng')
+        }
+        else if(sales >=1000000 && sales < 5000000){
+            alert('nhận được hoa hồng' + c)
+        }
+        else if (sales >= 5000000 && sales < 15000000){
+            alert('nhận được hoa hồng' + b)
+        }
+        else {
+            alert('nhận hoa hồng' + a)
+        }
+    </script>
+</body>
+</html>

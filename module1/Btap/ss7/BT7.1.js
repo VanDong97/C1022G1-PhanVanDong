@@ -1,7 +1,7 @@
 function doiduoctien() {
-    let Amount = document.getElementById("Amount").value;
-    let FromC = document.getElementById("From").value;
-    let To = document.getElementById("To").value;
+    let Amount = document.getElementById("amount").value;
+    let FromC = document.getElementById("from").value;
+    let To = document.getElementById("to").value;
     let Result;
 
     if (FromC == "USD" && To == "VND"){
