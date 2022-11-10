@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt('nhập giá trị cạnh 1')
+        let b = +prompt('nhập giá trị cạnh 2')
+        let c = +prompt('nhập giá trị cạnh 3')
+            if(a>0 && b>0 && c>0){
+                if((a+b)>c){
+                    if((b+c>a)){
+                        if((a+c>b)){
+                            alert('cạnh của tam giác '+ a)
+                            alert('cạnh của tam giác ' + b)
+                            alert('cạnh của tam giác ' + c)
+                        }
+                    }
+                }
+            }
+    </script>
+</body>
+</html>

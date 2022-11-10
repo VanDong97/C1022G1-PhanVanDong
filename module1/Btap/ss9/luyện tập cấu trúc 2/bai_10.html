@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" id="soDien">
+<button onclick="tinhDien()">Kiem Tra</button>
+<script>
+    function tinhDien() {
+        let soDien = document.getElementById('soDien').value;
+        let tienDien;
+        if (soDien > 0 && soDien <= 50) {
+            tienDien = soDien * 1678
+            alert('Giá tiền  là ' + tienDien + ' VND ')
+        } else if (soDien <= 100) {
+            tienDien = soDien * 1734
+            alert('Giá tiền  là ' + tienDien + ' VND ')
+        } else if (soDien <= 200) {
+            tienDien = soDien * 2014
+            alert(' Giá tiền  ' + tienDien + ' VND ')
+        } else if (soDien <= 300) {
+            tienDien = soDien * 2536
+            alert('Giá tiền  là ' + tienDien + ' VND ')
+        } else if (soDien <= 400) {
+            tienDien = soDien * 2834
+            alert('Giá tiền  là ' + tienDien + ' VND ')
+        } else {
+            tienDien = soDien * 2927
+            alert('Giá tiền  là ' + tienDien + ' VND ')
+        }
+    }
+</script>
+</body>
+</html>

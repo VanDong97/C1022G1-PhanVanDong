@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tienLuong = +prompt('Vui lòng nhập tiền lương')
+    let thue;
+    if (tienLuong <= 5000000) {
+        document.write('Không cần đóng thuế thu nhập');
+    } else if (tienLuong <= 18000000) {
+        thue = tienLuong * 0.015
+        document.write('Tiền thuế cần phải đóng là ' + thue + ' VND ')
+    }else if (tienLuong <= 32000000) {
+        thue = tienLuong * 0.02
+        document.write('Tiền thuế cần phải đóng là ' + thue + ' VND ')
+    }else if (tienLuong <= 52000000) {
+        thue = tienLuong * 0.03
+        document.write('Tiền thuế cần phải đóng là ' + thue + ' VND ')
+    }else if (tienLuong <= 80000000) {
+        thue = tienLuong * 0.05
+        document.write('Tiền thuế cần phải đóng là ' + thue + ' VND ')
+    }else{
+        thue = tienLuong * 0.07
+        document.write('Tiền thuế cần phải đóng là ' + thue + ' VND ')
+                }
+</script>
+</body>
+</html>
