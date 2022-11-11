@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhietDo = prompt('Vui lòng nhập nhiệt độ')
+    while (nhietDo > 120 || nhietDo < 20) {
+        if (nhietDo > 120) {
+            alert("Giảm Nhiệt Độ");
+            nhietDo = prompt('Mời Nhập Lại Nhiệt Độ')
+        } else {
+            alert('Tăng nhiệt độ');
+            nhietDo = prompt('Mời nhập lại nhiệt độ');
+        }
+    }
+    document.write(nhietDo + ' Nhiệt Độ Bình Thường');
+</script>
+</body>
+</html>
