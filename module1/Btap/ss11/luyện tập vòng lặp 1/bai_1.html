@@ -11,11 +11,15 @@
 
     let soDem = "";
 
-    for (i = 1; i < 100; ++i) {
-        soDem += "So " + i + "<br>";
+    for (i = 1; i <= 100; ++i) {
+        soDem +=  i + "<br>";
+        document.getElementById("ketqua").innerHTML = soDem;
+        if(i === 99){
+            document.write('Đã hoàn thanh')
+        }
     }
-    document.getElementById("ketqua").innerHTML = soDem;
-    alert('Đã hoàn thanh')
+
+
 </script>
 </body>
 </html>

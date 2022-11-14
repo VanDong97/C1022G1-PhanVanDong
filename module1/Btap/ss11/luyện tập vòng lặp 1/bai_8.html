@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="batDau()">Bắt Đầu</button>
+<p id = "ketQua">Hiển thị kết quả</p>
+<script>
+    function batDau() {
+        let number = +prompt("Mời bạn nhập vào giới hạn muốn đoán");
+        let randowNumber =(Math.random() * number);
+        let number1 = +prompt("Mời bạn nhập số muốn đoán");
+        let count = 0;
+        while (number1 !== randowNumber){
+            count ++;
+            if(count > 2){
+                document.getElementById("ketQua").innerHTML = "Bạn đã sai 3 lần , bạn đã hết lượt chơi"
+                break;
+            }else if(number1 > randowNumber){
+                alert("Bạn cần giảm giá trị");
+            }else if(number1 < randowNumber){
+                alert("Bạn cần tăng giá ")
+            }
+            number1 = +prompt("Mời bạn nhập lại");
+        }
+        while (number1 === randowNumber){
+            document.getElementById("ketQua").innerHTML = "Bạn đã đoán đúng"
+            break;
+        }
+    }
+</script>
+</body>
+</html>
