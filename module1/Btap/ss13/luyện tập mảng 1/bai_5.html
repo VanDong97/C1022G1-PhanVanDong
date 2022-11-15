@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Nhập độ dài của mảng')
+    let arr = [];
+    let arr1 = [];
+    let count = 0;
+    for(let i = 0; i < a; i++){
+        arr[i] = +prompt('Nhập giá trị số ')
+    }
+    document.write(arr + '<br>');
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] < 0){
+            arr1.push(arr[i]);
+            count ++;
+        }
+    }document.write(count + ' số nguyên  trong mảng ' + arr1);
+</script>
+</body>
+</html>

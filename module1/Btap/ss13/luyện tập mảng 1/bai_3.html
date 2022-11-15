@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Nhập độ dài của mảng');
+    let arr = [];
+    let max = 0;
+    let tong = 0;
+    let tb = 0;
+    for (let i = 0; i < a; i++) {
+        arr[i] = +prompt('Nhập giá trị số nguyên')
+    }
+    document.write(arr + '<br>');
+    for (let i = 0; i < arr.length; i++) {
+        tong = tong + arr[i]
+        if (max < arr[i]) {
+            max = arr[i]
+        }
+    } tb = tong / a
+    document.write('Số lớn nhất ' + max + '<br>');
+    document.write('Tổng là ' + tong + '<br>');
+    document.write('Trung Bình ' + '= ' + tb);
+</script>
+</body>
+</html>
