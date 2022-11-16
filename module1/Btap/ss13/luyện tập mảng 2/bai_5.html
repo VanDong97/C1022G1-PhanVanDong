@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuoi1 = prompt('Nhập giá trị chuỗi 1 ');
+    let chuoi2 = prompt('Nhập giá trị chuỗi 2 ');
+    let arr1 = chuoi1.split('');
+    let arr2 = chuoi2.split('');
+    let check = true ;
+    for(i = 0; i < chuoi1.length; i++){
+        if(arr1[i]==arr2[i]){
+            check = true;
+        }else{
+            check = false;
+            alert('2 chuỗi khác nhau ');
+        }
+    }
+    if(check){
+        alert ('2 chuỗi giống nhau ');
+    }
+</script>
+</body>
+</html>

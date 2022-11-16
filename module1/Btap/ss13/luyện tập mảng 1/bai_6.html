@@ -6,23 +6,34 @@
 </head>
 <body>
 <script>
-    let a = +prompt('Nhập độ dài của mảng')
+    // let a = +prompt('Nhập độ dài của mảng')
+    // let arr = [];
+    // let check = false;
+    // for (let i = 0; i < a; i++) {
+    //     arr[i] = +prompt('Nhập giá trị số nguyên ' + [i]);
+    // }
+    // document.write(arr + '<br>');
+    // let V = +prompt('Nhập vào giá trị bất kì');
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (V === arr[i]) {
+    //         document.write(V + ' ' + ' is in the array ');
+    //         check = true;
+    //         break;
+    //     }
+    // }
+    // if (check = false) {
+    //     document.write(V + ' ' + ' is not in the array');
+    // }
     let arr = [];
-    for (let i = 0; i < a; i++) {
-        arr[i] = +prompt('Nhập giá trị số nguyên');
+    for(let i = 0; i < 10; i ++){
+        arr[i] = +prompt('Nhập giá trị số ' + [i]);
     }
-    document.write(arr + '<br>');
-    let V = +prompt('Nhập vào giá trị bất kì');
-    for (let i = 0; i < arr.length; i++) {
-        if (V === arr[i]) {
-            document.write(V + " " + " is in the array");
-        } else {
-            document.write(V + " " + " is not the array");
-        }
-
+    let V = +prompt('Nhập giá trị cần tìm ');
+    if(arr.indexOf(V) !== -1){
+        document.write(V + ' ' + 'is in the array');
+    }else{
+        document.write(V + ' ' + ' is not in the array ');
     }
-
-
 </script>
 </body>
 </html>

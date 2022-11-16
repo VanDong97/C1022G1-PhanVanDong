@@ -7,10 +7,11 @@
 <body>
 <script>
     let arr = [];
-    for(let i = 0; i < 10; i++){
+    for (let i = 0; i < 10; i++) {
         arr[i] = +prompt('Nhập giá trị mảng ');
-    }document.write(arr + '<br>');
-    arr.sort(function (a , b) {
+    }
+    document.write(arr + '<br>');
+    arr.sort(function (a, b) {
         return b - a;
     })
     document.write(arr);
