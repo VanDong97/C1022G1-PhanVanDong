@@ -6,17 +6,20 @@
 </head>
 <body>
 <script>
-    let numb = [];
-    let arr = +prompt('Số phần tử cần nhập')
-    for (let i = 0; i < arr; i++) {
-        numb[i] = prompt('Nhập vào các phần tử của mảng [' +i+ ']')
-        if (numb[i] === '-') {
-            numb[i] = '_';
+    let n = +prompt("Nhập độ dài mảng");
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("Nhập ký tự " + i);
+    }
+    document.write("Mảng ban đầu: " + arr + "<br>");
+    let arr1 = arr.join(",");
+    let arr2 = [];
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] === '-') {
+            arr2 = arr1.replace(/-/g, '_');
         }
     }
-    let number = numb.join("");
-    document.write(number);
-
+    document.write("Mảng thay đổi: " + arr2);
 </script>
 </body>
 </html>
