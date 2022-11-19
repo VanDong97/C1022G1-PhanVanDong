@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Nhập vào 1 số bất kì ');
+
+    function tinhGiaiThua(i) {
+        if (i == 2)
+            return 2;
+        return i * tinhGiaiThua(i - 1);
+    }
+
+    alert('Giai thừa của ' + a + ' là ' + tinhGiaiThua(a));
+</script>
+</body>
+</html>

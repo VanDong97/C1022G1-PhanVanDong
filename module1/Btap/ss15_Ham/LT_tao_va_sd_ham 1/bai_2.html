@@ -6,12 +6,11 @@
 </head>
 <body>
 <script>
-    function tangGiaTri() {
-        let a = +prompt('Nhập giá trị ');
+    let a = +prompt('Nhập giá trị ');
+    function tangGiaTri(b) {
         return a + 1;
     }
-    let b = tangGiaTri();
-    alert(b);
+    alert('Giá trị sau khi tăng là ' + tangGiaTri(a))
 </script>
 </body>
 </html>
