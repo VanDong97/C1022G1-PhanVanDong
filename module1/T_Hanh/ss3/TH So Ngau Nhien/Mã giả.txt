@@ -1,9 +1,0 @@
-Begin
-   
-   Input (Math, Physics, Chemistry)
-  
-   C = (Math, phusics, Chemistry)/3
-   
-   Output C
-   
-   End

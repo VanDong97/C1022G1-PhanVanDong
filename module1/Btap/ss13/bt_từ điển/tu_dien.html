@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input id="search" type="text" placeholder="Nhập từ cần tìm">
+    <button onclick="translate()">Dịch</button>
+    <p id="result"></p>
+</form>
+<script>
+    let result = ""
+
+    function translate() {
+        let inPut = document.getElementById("search").value;
+        let arrayEng = ["love", "house", "gardens" , "rose"];
+        let arrayVN = ["tình yêu", "ngôi nhà", "vườn hoa", "hoa hồng"];
+        let a = arrayEng.indexOf(inPut);
+
+        if (a != 1) {
+            result = arrayVN[a]
+        } else
+            result = arrayEng[a]
+    }
+
+    document.getElementById("result").innerHTML = result;
+</script>
+</body>
+</html>
