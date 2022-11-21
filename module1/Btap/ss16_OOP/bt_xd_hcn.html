@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="chunhat" width='300' height='400'></div>
+<script>
+    class Rectangle {
+        constructor(chieuDai, chieuRong) {
+            this.chieuDai = chieuDai;
+            this.chieuRong = chieuRong;
+        }
+
+        dienTich(S) {
+            S = this.chieuDai * this.chieuRong;
+            return S;
+        }
+
+        chuVi(V) {
+            V = (this.chieuDai + this.chieuRong) * 2;
+            return V;
+        }
+
+        // Nhờ anh chỉ chổ sai ở canvas
+    }
+
+    // let rectangle = new Rectangle(200,75)
+    // let chieuDai = rectangle.chieuDai;
+    // let chieuRong = rectangle.chieuRong;
+    // let canvas = document.getElementById('chunhat');
+    // let ctx = canvas.getContext('2d');
+    // ctx.fillStyle = '#FF0000';
+    // ctx.fillRect(50, 30,chieuDai , chieuRong);
+    let rectangle2 = new Rectangle(15, 25);
+    document.write('Diện tích bằng ' + rectangle2.dienTich() + '<br>');
+    document.write('Chu vi bằng ' + rectangle2.chuVi());
+
+
+</script>
+</body>
+</html>

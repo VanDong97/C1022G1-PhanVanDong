@@ -8,16 +8,18 @@
 <script>
     let a = +prompt('Nhập độ dài của mảng');
     let arr = [];
-    for(let i = 0; i < a; i++){
+    for (let i = 0; i < a; i++) {
         arr[i] = +prompt('Nhập giá trị số nguyên');
-    }document.write(arr + '<br>');
+    }
+    document.write(arr + '<br>');
     let V = +prompt('Nhập giá trị bất kì vào');
-    for(let i = 0; i < arr.length; i++){
-        if(V === arr[i]){
+    for (let i = 0; i < arr.length; i++) {
+        if (V === arr[i]) {
             arr.splice(i, 1);
-            arr.push(0)
+            arr.push(0);
         }
-    }document.write(arr);
+    }
+    document.write(arr);
 </script>
 </body>
 </html>
