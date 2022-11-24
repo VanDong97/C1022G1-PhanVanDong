@@ -5,6 +5,38 @@
     <title>Title</title>
 </head>
 <body>
-
+<p>Menu : 1.Cafe 2.Cam vắt 3.Nước cà rốt 4.Nước cà chua 5.Nước lọc 6.Nước dừa 7.Thoát Menu</p>
+<script>
+    let doUong;
+    let perice = 0;
+    do {
+        alert('Menu : 1.Cafe 2.Cam vắt 3.Nước cà rốt 4.Nước cà chua 5.Nước lọc 6.Nước dừa ')
+        doUong = +prompt('Nhập loại nước theo số thứ tự');
+        let soLuong = +prompt('Nhập số lượng muốn mua ');
+        switch (doUong) {
+            case 1 :
+                perice = soLuong * 20000;
+                break;
+            case 2 :
+                perice = soLuong * 25000;
+                break;
+            case 3 :
+                perice = soLuong * 25000;
+                break;
+            case 4 :
+                perice = soLuong * 20000;
+                break;
+            case 5 :
+                perice = soLuong * 10000;
+                break;
+            case 6 :
+                perice = soLuong * 25000;
+                break;
+            case 7 :
+                break;
+        }
+    } while (doUong < 1 || doUong > 7)
+    document.write('Giá tiền là : ' + perice + 'VND');
+</script>
 </body>
 </html>
