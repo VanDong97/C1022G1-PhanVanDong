@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<div id="chunhat" width='300' height='400'></div>
+<canvas id="chunhat" width='250' height='250'></canvas>
 <script>
     class Rectangle {
         constructor(chieuDai, chieuRong) {
@@ -22,21 +22,19 @@
             V = (this.chieuDai + this.chieuRong) * 2;
             return V;
         }
-
-        // Nhờ anh chỉ chổ sai ở canvas
     }
 
-    // let rectangle = new Rectangle(200,75)
-    // let chieuDai = rectangle.chieuDai;
-    // let chieuRong = rectangle.chieuRong;
-    // let canvas = document.getElementById('chunhat');
-    // let ctx = canvas.getContext('2d');
-    // ctx.fillStyle = '#FF0000';
-    // ctx.fillRect(50, 30,chieuDai , chieuRong);
-    let rectangle2 = new Rectangle(15, 25);
+    let rectangle2 = new Rectangle(150, 80);
     document.write('Diện tích bằng ' + rectangle2.dienTich() + '<br>');
     document.write('Chu vi bằng ' + rectangle2.chuVi());
 
+    let canvas = document.getElementById('chunhat');
+    let ctx = canvas.getContext("2d");
+    ctx.rect(40, 40, 150, 80);
+    ctx.strokeStyle = "red";
+    ctx.stroke();
+    ctx.fillStyle = "yellow";
+    ctx.fill();
 
 </script>
 </body>

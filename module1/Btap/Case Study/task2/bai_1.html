@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tienLuong = +prompt('Nhập số tiền lương nhận được ');
+    let thue;
+    let luong;
+    if (tienLuong <= 7000000) {
+        thue = tienLuong * 0.05;
+        luong = tienLuong - thue;
+        document.write('Tiền thuế bạn phải đóng là ' + thue + '<br>');
+        document.write('Tiền lương còn lại là ' + luong);
+    } else if (tienLuong < 15000000) {
+        thue = tienLuong * 0.1;
+        luong = tienLuong - thue;
+        document.write('Tiền thuế bạn phải đóng là ' + thue + '<br>');
+        document.write('Tiền lương còn lại là ' + luong);
+    } else {
+        thue = tienLuong * 0.2;
+        luong = tienLuong - thue;
+        document.write('Tiền thuế bạn phải đóng là ' + thue + '<br>');
+        document.write('Tiền lương còn lại là ' + luong);
+    }
+</script>
+</body>
+</html>

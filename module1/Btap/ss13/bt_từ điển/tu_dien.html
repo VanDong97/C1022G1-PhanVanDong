@@ -7,25 +7,20 @@
 <body>
 <form>
     <input id="search" type="text" placeholder="Nhập từ cần tìm">
-    <button onclick="translate()">Dịch</button>
-    <p id="result"></p>
+    <button type="button" onclick="b()">Dịch</button>
 </form>
 <script>
-    let result = ""
 
-    function translate() {
+    function b() {
         let inPut = document.getElementById("search").value;
-        let arrayEng = ["love", "house", "gardens" , "rose"];
-        let arrayVN = ["tình yêu", "ngôi nhà", "vườn hoa", "hoa hồng"];
+        let arrayEng = ["love", "house", "gardens", "rose"];
+        let arrayVn = ["tình yêu", "ngôi nhà", "vườn hoa", "hoa hồng"];
         let a = arrayEng.indexOf(inPut);
 
-        if (a != 1) {
-            result = arrayVN[a]
-        } else
-            result = arrayEng[a]
+        if (a != -1) {
+            alert(arrayVn[a])
+        }
     }
-
-    document.getElementById("result").innerHTML = result;
 </script>
 </body>
 </html>

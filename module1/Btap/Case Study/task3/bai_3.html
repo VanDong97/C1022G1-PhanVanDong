@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doDai = +prompt('nhập độ dài mảng');
+    let arrnumerators = [];
+    let arrdenominators = [];
+    let max = 0;
+    let viTri;
+    let division;
+    for (let i = 0; i < doDai; i++) {
+        arrnumerators[i] = +prompt('Nhập phần tử mảng 1 ' + i);
+    }
+    document.write(arrnumerators + '<br>');
+
+    for (let i = 0; i < doDai; i++) {
+        arrdenominators[i] = +prompt('Nhập phần tử mảng 2 ' + i);
+    }
+    document.write(arrdenominators + '<br>');
+
+    for (let i = 0; i < doDai; i++) {
+        if (arrnumerators[i] / arrdenominators[i] > max) {
+            max = arrnumerators[i] / arrdenominators[i];
+            viTri = i;
+            division = arrnumerators[i] + '/' + arrdenominators[i];
+        }
+    }
+    document.write(division + 'là phân số lớn nhất ' + ' tại vị trí' + viTri);
+
+
+</script>
+</body>
+</html>

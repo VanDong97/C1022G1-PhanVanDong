@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = 10;
+        }
+        decrease() {
+            this.weight--;
+        }
+    }
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+        say(loiNoi){
+            console.log(loiNoi);
+        }
+        eat(apple){
+            this.weight += 1;
+            apple.decrease();
+        }
+    }
+    class Adam extends Human {
+        constructor(name, gender, weight) {
+            super(name, gender, weight);
+        }
+    }
+    let adam2 = new Adam(Adam,male,100);
+    document.write(adam2.say('Tôi cắn 1 miếng'));
+    document.write('Khối lượng quả táo còn ' + this.weight--);
+    document.write('Cân nặng của Adam là ' + adam2.decrease());
+    class Eva extends Human{
+        constructor(name, gender, weight) {
+            super(name, gender, weight);
+        }
+    }
+    let eva2 = new Eva(Eva, female, 100);
+    document.write(eva2.say('Tôi cắn 1 miếng'));
+    document.write('Khối lượng quả táo còn ' + this.weight--);
+    document.write('Cân nặng của Eva là ' + eva2.decrease());
+</script>
+</body>
+</html>

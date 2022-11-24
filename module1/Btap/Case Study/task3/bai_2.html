@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let check;
+    let arr1 = new Array(3);
+    for (let i = 0; i < arr1.length; i++) {
+        arr1[i] = +prompt('Nhập giá trị mảng 1');
+    }
+    let arr2 = new Array(5);
+    for (let i = 0; i < arr2.length; i++) {
+        arr2[i] = +prompt('Nhập giá trị mảng 2');
+        check = arr1.indexOf(arr2[i]);
+        if (check == -1) {
+            arr.push(arr2[i])
+        }
+    }
+    document.write(arr);
+</script>
+</body>
+</html>
