@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt('Nhập chuỗi kí tự ');
+    
+    function demKyTu(str1) {
+        let newstr = '' ;
+        for (let i = 0; i < str.length; i++) {
+            if (newstr.includes(str1[i]) == false){
+                newstr += str1[i] ;
+            }
+        }
+        return newstr.length ;
+    }
+    document.write('Có ' + demKyTu(str) + 'ký tự khác nhau');
+</script>
+</body>
+</html>
