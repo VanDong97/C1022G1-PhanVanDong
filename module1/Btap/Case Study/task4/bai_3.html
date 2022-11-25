@@ -6,7 +6,18 @@
 </head>
 <body>
 <script>
-   
+    let str = prompt("Nhap xâu kí tự :") ;
+    let str2 = prompt("Nhap xau ki tu :");
+    let arr1 = str.split('');
+    let arr2 = str2.split('');
+    let newArr = [];
+    for (let i =0 ; i<arr2.length;i++){
+        if(arr1.indexOf(arr2[i])!=-1){
+            newArr.push(arr2[i]);
+            arr1.splice(arr1.indexOf(arr2[i]),1);
+        }
+    }
+    document.write(newArr.length);
 </script>
 </body>
 </html>
