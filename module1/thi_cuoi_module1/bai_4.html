@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class CongNhan {
+        constructor(id, name, dateOfBirth, diaChi, luong, chucVu) {
+            this.id = id;
+            this.name = name;
+            this.dateOfBrith = dateOfBirth;
+            this.diaChi = diaChi;
+            this.luong = luong;
+            this.chucVu = chucVu;
+        }
+        getInfo() {
+            return this.chucVu + this.name;
+        }
+    }
+
+        let congNhan = new congNHan(1, 'Nguyen Van A', '03-03-1995', 'Đà Nẵng', 2000000, 'WC');
+        let congNhan2 = new congNHan(2, 'Nguyen Van B', '04-04-1996', 'Đà Nẵng', 3000000, 'WC');
+        let congNhan3 = new congNHan(3, 'Nguyen Van C', '05-05-1997', 'Đà Nẵng', 4000000, 'WC');
+        let congNhan4 = new congNHan(4, 'Nguyen Van D', '06-06-1998', 'Đà Nẵng', 5000000, 'WC');
+        let congNhan5 = new congNHan(5, 'Nguyen Van E', '07-07-1999', 'Đà Nẵng', 6000000, 'WC');
+
+        let congNhanList = [];
+        congNhanList.push(new congNHan(1, 'Nguyen Van A', '03-03-1995', 'Đà Nẵng', 2000000, 'WC'));
+        congNhanList.push(new congNHan(2, 'Nguyen Van B', '04-04-1996', 'Đà Nẵng', 3000000, 'WC'));
+        congNhanList.push(new congNHan(3, 'Nguyen Van C', '05-05-1997', 'Đà Nẵng', 4000000, 'WC'));
+        congNhanList.push(new congNHan(4, 'Nguyen Van D', '06-06-1998', 'Đà Nẵng', 5000000, 'WC'));
+        congNhanList.push(new congNHan(5, 'Nguyen Van E', '07-07-1999', 'Đà Nẵng', 6000000, 'WC'));
+
+
+    document.write(congNhan.getInfo());
+</script>
+</body>
+</html>

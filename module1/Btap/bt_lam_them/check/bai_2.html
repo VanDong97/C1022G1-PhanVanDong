@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = +prompt('Nhập cạnh thứ nhất');
+    let y = +prompt('Nhập cạnh thứ 2');
+    let z = +prompt('Nhập cạnh thứ 3');
+
+    function kiemTra(x, y, z) {
+        if (z > 0 && x > 0 && y > 0){
+            if (x + y > z && y + z > x && x + z > y){
+                if (x * x + y * y === z * z || y * y + z * z === x * x || x * x + z * z === y * y){
+                    return 'Là 3 cạnh của tam giác vuông';
+                }else {
+                    return 'là 3 cạnh của tam giác';
+                }
+            }else{
+                return 'Không phải là 3 cạnh của tam giác';
+            }
+        }
+    }
+
+    document.write(kiemTra(x,y,z));
+</script>
+</body>
+</html>

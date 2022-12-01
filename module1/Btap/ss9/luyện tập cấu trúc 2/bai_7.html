@@ -7,22 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        let a = prompt ('nhập giá trị a')
-        let b = prompt('nhập giá trị b')
-        let c = prompt('nhap gia tri c')
-        let delta = b*b -(4*a*c)
-        if(delta < 0){
-            alert('phuong trinh vo nghiem')
-        }else if(delta==0){
-            let f = (-b/(2*a))
-            alert('phuong trinh co nghiem kep ' + f)
-        }else{
-            let d = (-b + Math.sqrt(delta)) / (2*a)
-            let e = (-b - Math.sqrt(delta)) / (2*a)
-            alert('phuong co 2 nghiem ' + d + 'va' + e)
-
-        }
-    </script>
+<script>
+    let a = prompt('nhập giá trị a')
+    let b = prompt('nhập giá trị b')
+    let c = prompt('nhap gia tri c')
+    let delta = b * b - (4 * a * c)
+    if (delta < 0) {
+        alert('phuong trinh vo nghiem')
+    } else if (delta == 0) {
+        let f = (-b / (2 * a))
+        alert('phuong trinh co nghiem kep ' + f)
+    } else {
+        let d = (-b + Math.sqrt(delta)) / (2 * a)
+        let e = (-b - Math.sqrt(delta)) / (2 * a)
+        alert('phuong co 2 nghiem ' + d + 'va' + e)
+    }
+</script>
 </body>
 </html>

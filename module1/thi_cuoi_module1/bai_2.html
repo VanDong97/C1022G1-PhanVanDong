@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = +prompt('Nhập 1 số nguyên dương bất kì');
+    function check(soHoanHao) {
+        let flag = false;
+        let sum = 0;
+        for (let i = 0; i < soHoanHao; i++) {
+            if (soHoanHao > 0 && soHoanHao % i === 0){
+                sum += i;
+            }
+        }
+        if (sum == soHoanHao){
+            flag = true;
+        }else{
+            flag = false;
+        }
+        return flag;
+    }
+    document.write(check(number));
+</script>
+</body>
+</html>

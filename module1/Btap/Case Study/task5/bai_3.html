@@ -6,40 +6,40 @@
 </head>
 <body>
 <script>
-    let m = [];
-    let n = [];
-    let a = +prompt("chiều dài của m");
-    for (let k = 0; k < a; k++) {
-        m[k] = +prompt("mảng M:" + k);
+    let arr = [];
+    let arr1 = [];
+    let a = +prompt('Nhập độ dài của mảng');
+    for (let i = 0; i < a; i++) {
+        arr[i] = +prompt('Nhập giá trị của mảng thứ ' + i);
     }
-    let b = +prompt("chiều dài mảng n");
-    for (let y = 0; y < b; y++) {
-        n[y] = +prompt("Mảng N:" + y);
+    let b = +prompt('Nhập độ dài của mảng');
+    for (let i = 0; i < b; i++) {
+        arr1[i] = +prompt('Nhập giá trị của mảng thứ ' + i);
     }
-    let mang = [m, n];
-    giaTriMinMax(mang);
 
-    function giaTriMinMax(num) {
-        let min = num[0][0];
-        let max = num[0][0];
-        for (let i = 0; i < num.length; i++) {
-            for (let j = 0; j < num[i].length; j++) {
-                if (max < num[i][j]) {
-                    max = num[i][j];
+    function minMax(number) {
+        let max = number[0][0];
+        let min = number[0][0];
+        for (let i = 0; i < number.length; i++) {
+            for (let j = 0; j < number[i].length; j++) {
+                if (number[i][j] > max) {
+                    max = number[i][j];
                 }
             }
         }
-        document.write("số lớn nhất ="+max+"<br>")
-        for (let n = 0; n < num.length; n++) {
-            for (let m = 0; m < num[n].length; m++) {
-                if (num[n][m] < min) {
-                    min = num[n][m];
+        document.write('Số lớn nhất là ' + max + '<br>');
+        for (let i = 0; i < number.length; i++) {
+            for (let j = 0; j < number[i].length; j++) {
+                if (number[i][j] < min) {
+                    min = number[i][j];
                 }
             }
-
         }
-        document.write("số bé nhất ="+min)
+        document.write('Số bé nhất là ' + min);
     }
+
+    let arr2 = [arr, arr1];
+    minMax(arr2);
 </script>
 </body>
 </html>

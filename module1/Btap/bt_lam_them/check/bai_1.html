@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt('Nhập độ dài của mảng');
+    let arr = [];
+    let check = false;
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt('Nhập giá trị của mảng thứ' + i);
+    }
+    document.write(arr + '<br>')
+    let kiemTra = arr[1] - arr[0];
+    for (let j = 1; j < arr.length; j++) {
+        if (kiemTra === arr[j] - arr[j - 1]) {
+            check = true;
+        } else {
+            check = false;
+            break;
+        }
+    }
+    if (check) {
+        document.write('Là mảng tăng dần đều ');
+    } else {
+        document.write('không phải là mảng tăng dần đều ');
+    }
+<!--    let n = +prompt('Nhập độ dài của mảng');-->
+<!--    let arr = [];-->
+<!--    for (let i = 0; i < n; i++) {-->
+<!--        arr[i] = +prompt('Nhập giá trị của mảng thứ ' + i);-->
+<!--    }-->
+<!--    document.write(arr + '<br>');-->
+
+<!--    function tangDanDeu(num) {-->
+<!--        let kiemTra = num[1] - num[0];-->
+<!--        for (let i = 1; i < num.length; i++) {-->
+<!--            if (kiemTra !== num[i] - num[i - 1] || num[i] < num[i - 1]) {-->
+<!--                return document.write('không phải là mảng tăng dần đều');-->
+<!--            }-->
+<!--        }-->
+<!--        return document.write('là mảng tăng dần đều');-->
+<!--    }-->
+
+<!--    tangDanDeu(arr);-->
+</script>
+</body>
+</html>

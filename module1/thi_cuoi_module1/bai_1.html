@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doDai = +prompt('Nhập độ dài của mảng ');
+    let arr = [];
+    for (let i = 0; i < doDai; i++) {
+        arr[i] = +prompt('Nhập giá trị của mảng thứ ' + i);
+    }
+    document.write(arr + '<br>');
+    document.write('Độ dài của các phần tử nhập vào là ' + doDai + '<br>');
+    let trungBinh = 0;
+    let count = 0;
+    let tong = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 3 === 0) {
+            tong += arr[i];
+            count++;
+        }
+    }
+    trungBinh = tong / count;
+    document.write('Trung bình cộng của các số chia hết cho 3 là ' + trungBinh);
+</script>
+</body>
+</html>
